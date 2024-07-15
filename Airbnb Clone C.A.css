@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  @font-face {
+    font-family: 'Font Awesome 5 Free';
+    src: url('/icon/fontawesome-free-6.5.2-web/webfonts/fa-brands-400.woff2') format('woff2'),
+         url('/icon/fontawesome-free-6.5.2-web/webfonts/fa-regular-400.ttf') format('woff');
+         src: url('icon/fontawesome-free-6.5.2-web/webfonts/fa-regular-400.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  body{
+    font-family: 'CustomFont'; /* Use the font family */
+  }
+  body{
+    font-family:Arial, sans-serif;
+    line-height:1.6;
+    color:#333;
+    background-color:#fff;;
+  }
+  .AirbnbContainer{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 20px;
+  }
+  .AirbnbNav{
+    background-color:#fff;
+    padding:20px 0;
+    border-bottom:1px solid #ddd;
+  }
+  .AirbnbLogo1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .AirbnbLogo2{
+    flex-basis:20%;
+  }
+  .AirbnbLogo3{
+    width:100px;
+    height:30px;
+    margin:10px;
+  }
+  .AirbnbLogo3 img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+  }
+  .StaysExperiences{
+    flex-basis:40%;
+  }
+  .StaysExperiences ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    color:#666;
+  }
+  .StaysExperiences li a{
+    margin-right:20px;
+    color:#666;
+  }
+  .StaysExperiences li a:hover{
+    color:black;
+  }
+  .StaysExperiences li .active{
+    color:black;
+  }
+  .StaysExperiences a{
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .StaysExperiences a:hover{
+    color: #666;
+  }
+  .Login{
+    flex-basis:25%;
+    text-align:right;
+  }
+  .Login span{
+    font-size:16px;
+    color:#666;
+  }
+  .Login span a{
+    text-decoration:none;
+    color:black;
+  }
+  .Login span a:hover{
+    background-color:#f8f3f3;
+    padding:auto;
+    border-radius:50px;
+  }
+  .Login{
+    display: flex;
+    align-items: center;
+  }
+  .globe-link{
+    color: #666;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  .LoginSection{
+    display:flex;
+    align-items:center;
+    border:1px solid #c4c2c2;
+    padding:8px;
+    border-radius:50px;
+    padding-right:1px;
+  }
+  .LoginSection i{
+    font-size:18px;
+    margin-right:15px; 
+  }
+  .LoginIcon{
+    width:30px;
+    height:30px;
+    object-fit:contain;
+    margin-right:10px;
+  }
+  a .fa-globe{
+    text-decoration: none;
+    color:#666;
+    margin: 20px;
+  }
+  .Search{
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+    align-items:center; 
+    flex-shrink:0;
+    position:relative;
+  }
+  
+  .Search ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between; 
+    align-items: center;
+    box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 13px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    height: 60px; 
+    width: 900px;
+    padding-left: 0px;  
+  }
+  .Search li{
+    margin: 10px; 
+    font-size: 14px;  
+  }
+  .SearchSection .remove{
+    border: none;
+  }
+  
+  .Search li a{
+    text-decoration: none;
+    color: black;
+    
+  }
+  .SearchSection:hover {
+    cursor: pointer;
+    background-color: #ddd;
+    border-radius: 50px;  
+  }
+  .search-bar li:last-child { 
+    margin-right: 0;
+    padding-right: 10px;
+  }
+  
+  .search-bar li:last-child i {
+    font-size: 18px;
+    color: #666;
+  }
+  .WhereSearchDestination{
+    width: 250px;
+    padding-left: 10px;
+    border: 2px solid #ddd;
+  }
+  .SearchSection{
+    border:none;
+    position:relative;
+  }
+  .CheckAddDate{
+    width:105px;
+    text-align:center; 
+  }
+  .fa-search{
+  background-color: rgb(219, 29, 76);
+  border-radius:50px;
+  padding:15px;  
+  color:white;
+  cursor:pointer; 
+  }
+  .WhoGuests{
+    width:200px;  
+  }
+  .fa-search{
+    position:absolute;
+    right:140px;
+  }
+  .NavigationTable{
+    display: flex;
+    justify-content:center;
+    margin-top:5px;  
+  }
+  .NavigationIcons{
+  display:flex;
+  font-size:25px;
+  font-weight:100;
+  padding:10px;
+  overflow:scroll;
+  }
+  .NavigationIcons:-webkit-scrollbar{
+   scrollbar-width:none;
+  }
+  .NavIcon{
+    height:100px;
+    padding:20px;
+    cursor:pointer; 
+  }
+  .NavIcon:hover{
+    border-bottom:2px solid #c4c2c2;
+  }
+  .NavArrow{
+    border:none;
+    background-color:white;
+    padding:10px;
+  }
+  .fa-chevron-left{
+    border-radius: 100px;
+    border: 2px solid #c4c2c2;
+    padding: 7px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .fa-chevron-left:hover{
+    box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 13px 0 rgba(0, 0, 0, 0.1); 
+  }
+  .fa-chevron-right{
+    border-radius: 100px;
+    border: 2px solid #c4c2c2;
+    padding: 7px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .fa-chevron-right:hover{
+    box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 13px 0 rgba(0, 0, 0, 0.1); 
+  }
+  .ContentInimg{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;  
+  }
+  .imgArea{
+    display:inline-block;
+    position:relative;
+  } 
+  .fa-arrow-up-from-bracket{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-style: normal;
+  }
+  .imgArea::before {
+    content: "\e09a";
+    font-family: "Font Awesome 5 Free";
+    font-size: 15px;
+    color: black;
+    background-color:#c4c2c2;
+    padding:8px;
+    border-radius:50%;
+    font-style:normal;
+    font-weight:600;
+    position:absolute;
+    top:20px;
+    right:20px;
+    cursor:pointer;
+  }
+  
+  .imgArea::before:hover {
+    background-color: red;
+  }
+  .imgDetail{
+    text-align:left;
+    margin-left:20px;
+    font-weight:600;
+    font-size: 15px;
+    color: black;
+  }
+  .img2ndDetail{
+    color:#666
+  }
+  .ItemInimg{
+    width:290px;
+    height:200px;
+    padding:15px;
+    border-radius:30px; 
+  }
+  .ContentInimg.text-heading{
+     padding-top:38px;
+     margin-left:10px;
+     font-size:35px;
+  }
+  
+  
+  
